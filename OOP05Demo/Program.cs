@@ -1,4 +1,5 @@
-﻿using OOP05Demo.Operator_Overloading;
+﻿using OOP05Demo.Casting_operator_buisness_need;
+using OOP05Demo.Operator_Overloading;
 using System.Net.Http.Headers;
 
 namespace OOP05Demo
@@ -51,7 +52,7 @@ namespace OOP05Demo
             //else
             //    Console.WriteLine("Both are equal");
             #endregion
-                    
+
             #region casting operator overloading
             //long x = 50;
             //int y = (int)x; // casting operator
@@ -62,6 +63,21 @@ namespace OOP05Demo
             //Console.WriteLine(str); 
             #endregion
 
+            #region Casting operator buisness need
+            //mapping from ref type to ref type
+
+            //Employee employee = new Employee()
+            //{
+            //    Id = 1,
+            //    FullName = "Mahmoud Ibrahim",
+            //    Email = "Mahmoud@gmail.com",
+            //    Password = "password"
+
+            //};
+            //EmployeeViewModel employeeViewModel = (EmployeeViewModel)employee;
+            //Console.WriteLine(employeeViewModel.FirstName);
+            //Console.WriteLine(employeeViewModel.LastName); 
+            #endregion
 
 
 
