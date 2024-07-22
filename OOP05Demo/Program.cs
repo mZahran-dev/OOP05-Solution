@@ -1,11 +1,19 @@
-﻿using OOP05Demo.Casting_operator_buisness_need;
+﻿using OOP05Demo.Abstraction;
+using OOP05Demo.Casting_operator_buisness_need;
 using OOP05Demo.Operator_Overloading;
+using OOP05Demo.Partial;
+using OOP05Demo.Sealed;
+using OOP05Demo.Static;
 using System.Net.Http.Headers;
 
 namespace OOP05Demo
 {
     internal class Program
     {
+        public static void Print(PaymentProcessor payment , double amount)
+        {
+            payment.processPayment(amount);
+        }
         static void Main(string[] args)
         {
             Complex c1 = new Complex() { Real = 3 , Imag = 4 };
@@ -78,6 +86,60 @@ namespace OOP05Demo
             //Console.WriteLine(employeeViewModel.FirstName);
             //Console.WriteLine(employeeViewModel.LastName); 
             #endregion
+
+            #region Abstraction
+            //Rectangle r1 = new Rectangle()
+            //{
+            //    Dim01 = 10,
+            //    Dim02 = 20
+            //};
+            //Console.WriteLine(r1.CalcArea());
+            //Console.WriteLine(r1.perimeter);
+
+            //Circle c = new Circle(10);
+            //Console.WriteLine(c.CalcArea()); 
+            #endregion
+
+            #region Static Keyword
+            //Utility u1 = new Utility(1, 2);
+            //Utility u2 = new Utility(2, 3);
+
+            //Console.WriteLine(Utility.CmToInch(10));
+            //Console.WriteLine(Utility.CmToInch(10));
+
+            //Console.WriteLine("*****************");
+
+            //Console.WriteLine(Utility.CalCircleArea(10));
+            //Console.WriteLine(Utility.CalCircleArea (10));
+            //Console.WriteLine(Utility.Pi);
+
+            //Utility u1 = new Utility(1, 2);
+            //Utility u2 = new Utility(2, 3);
+            //Console.WriteLine(Guid.NewGuid()); 
+            #endregion
+
+
+            #region Sealed [Class , Propety, Method]
+            //PaymentProcessor paymentProcessor = new PaymentProcessor();
+            //InheritPayment payment = new InheritPayment();
+            //paymentProcessor.processPayment(10);
+            //payment.processPayment(20); 
+            #endregion
+
+
+            #region Partial Class
+            //Person p1 = new Person()
+            //{
+            //    Id = 1,
+            //    Name = "Test",
+            //    Age = 20,
+            //    salary = 2000
+            //}; 
+            #endregion
+
+
+
+
 
 
 
